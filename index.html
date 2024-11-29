@@ -3,41 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widt, initial-scale=1.0"> 
-    <title>Logo</title>
+    <title>Hjem-nettsidenavn</title>
     <link rel="stylesheet" href="Ikons/css/solid.css">
     <link rel="stylesheet" href="Ikons/css/regular.css">
     <link rel="stylesheet" href="Ikons/css/fontawesome.css">
     <link rel="stylesheet" href="Ikons/css/brands.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header id="topp">    
-        <form action="submit.php" method="post">
-            <input type="text" id="søk" name="søk">
-            <button>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </form>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Hjem</a>
-                </li>
-                <li>
-                    <a href="produkter.html">Produkter</a>
-                </li>
-                <li>
-                    <a href="index.html"><h1>Logo</h1></a>
-                </li>
-                <li>
-                    <a href="kategorier.html">Kategorier</a>
-                </li>
-                <li>
-                    <a href="contact.html">Kontakt oss</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+ <body>
+     <header>
+        <section class="top-bar">
+            <section class="search-bar">
+                <input type="text" placeholder="søk her">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Hjem</a>
+                    </li>
+                    <li>
+                        <a href="index.html#product.name">Produkter</a>
+                    </li>
+                    <li>
+                        <a href="index.html"><h1 class="logo">Logo</h1></a>
+                    </li>
+                    <li>
+                        <a href="#kategorier">Kategorier</a>
+                    </li>
+                    <li>
+                        <a href="#footer">Kontakt oss</a>
+                    </li>
+                </ul>
+                <section class="icons">
+                    <i class="fa-regular fa-user"></i> 
+                    <i class="fa-regular fa-heart"></i> 
+                    <a href="checkout.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </section>
+            </nav>
+        </section>
+     </header>
             <main>
                 <section class="container">
                     <h1>Et harum quidem rerum facilis est et expedita distinctio.</h1>
@@ -47,11 +56,9 @@
                     </p>
                     <button>FÅ EN PRØVE PAKKE I DAG</button>
                 </section>
-                <section>
+                <section class="populære product">
                     <h2>Våre mest populære produkter</h2>
-                    <p>
-                        Oppdag det beste av det beste 
-                    </p>
+                    <p>Oppdag det beste av det beste </p>
                     <nav>
                         <button>
                             New product
@@ -64,6 +71,101 @@
                         </button>
                     </nav>
                 </section>
+                <section id="product.name">
+                    <article>
+                        <img src="img/eksamen_web_bilde.jpg" alt="fjell med snø, pent himmel fint utsikt">
+                        <a href="product.html">Product name</a>
+                        <p>kr 1999</p>
+                    </article>
+                    <article>
+                        <img src="img/eksamen_web_bilde.jpg" alt="fjell med snø, pent himmel fint utsikt">
+                        <a href="product.html">Product name</a>
+                         <p>kr 1999</p>
+                    </article>
+                    <article>
+                        <img src="img/eksamen_web_bilde.jpg" alt="fjell med snø, pent himmel fint utsikt">
+                        <a href="product.html">Product name</a>
+                        <p>kr 1999</p>
+                    </article>
+                    <article>
+                        <img src="img/eksamen_web_bilde.jpg" alt="fjell med snø, pent himmel fint utsikt">
+                        <a href="product.html">Product name</a>
+                        <p>kr 1999</p>
+                    </article>
+                    <article>
+                        <img src="img/eksamen_web_bilde.jpg" alt="fjell med snø, pent himmel fint utsikt">
+                        <a href="product.html">Product name</a>
+                        <p>kr 1999</p>
+                    </article>
+                    <article>
+                        <img src="img/eksamen_web_bilde.jpg" alt="fjell med snø, pent himmel fint utsikt">
+                        <a href="product.html">Product name</a>
+                        <p>kr 1999</p>
+                    </article>
+                </section>
+                <h2 id="kategorier" class="midtstilt-tittel">Våre mest populære kategorier</h2>
+                <p class="midtstilt-tekst">Oppdag det beste av det beste </p>
+                <section class="grid">
+                    <article class="kategori"><h3>KATEGORI 1</h3></article>
+                    <article class="kategori"><h3>KATEGORI 2</h3></article>
+                    <article class="kategori"><h3>KATEGORI 3</h3></article>
+                    <article class="kategori"><h3>KATEGORI 4</h3></article>
+                    <article class="kategori"><h3>KATEGORI 5</h3></article>
+                </section>
+                <section class="Anmeldelser">
+                    <h2>Anmeldelser</h2>
+                    <article>
+                        <img src="img/eksamen_web_hund.jpg" alt="det er en hund">
+                        <h3>Rober Labrador</h3>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                    </article>
+                    <article>
+                        <img src="img/eksamen_web_hund.jpg" alt="det er en hund">
+                        <h3>Rober Labrador</h3>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                    </article>
+                    <article>
+                        <img src="img/eksamen_web_hund.jpg" alt="det er en hund">
+                        <h3>Rober Labrador</h3>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                    </article>
+                    <article>
+                        <img src="img/eksamen_web_hund.jpg" alt="det er en hund">
+                        <h3>Rober Labrador</h3>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                    </article>
+                </section>
             </main>
-</body>
+        
+            <footer id="footer">
+                <section class="footer-content">
+                    <h1 class="logo">Logo</h1>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                    <h2>Kontakt</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> Adresse: B R A Veien 4, 1757 Halden</p>
+                    <p><i class="fas fa-phone"></i> Telefon: 69 00 00 00</p>
+                    <p><i class="fas fa-envelope"></i> E-post: halden@hiøf.no</p>
+                    <p><i class="fas fa-clock"></i> Åpningstider: Stenger: 15:00</p>
+                </section>
+            
+                <section class="footer-shortcuts">
+                    <h2>Snarveier</h2>
+                    <ul>
+                        
+                        <li><a href="#kategorier">Kategorier</a></li>
+                        <li><a href="#footer">Kontakt oss</a></li>
+                    </ul>
+                </section>
+            
+                <section class="footer-social">
+                    <h2>Sosiale medier</h2>
+                    <ul>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </section>
+            </footer>
+    </body>
 </html>
